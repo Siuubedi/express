@@ -1,0 +1,22 @@
+{
+  "name": "learning-express",
+  "version": "1.0.0",
+  "description": "This is where I am revising the concepts of expressjs",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siuubedi/express.git"
+  },
+  "author": "subigya-js",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Siuubedi/express/issues"
+  },
+  "homepage": "https://github.com/Siuubedi/express#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
