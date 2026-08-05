@@ -28,6 +28,8 @@ app.get("/json", (req: Request, res: Response) => {
     )
 })
 
+app.use("/api/contacts", require("./routes/contactRoutes"))
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 })
