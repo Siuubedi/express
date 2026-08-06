@@ -1,16 +1,20 @@
-import express, { Request, Response } from "express";
+import express from "express";
+import { createContact, deleteContact, getAllContacts, getContactById, updateContact } from "../controllers/contactControllers";
 const router = express.Router()
 
-router.get("/", (req: Request, res: Response) => {
-    res.send("This is contact page");
-})
+// Get all contacts
+router.get("/", getAllContacts)
 
-router.get("/json", (req: Request, res: Response) => {
-    res.status(200).json({ message: "hello" });
-})
+// Get contact by id
+router.get("/:id", getContactById)
 
-router.get('/:id', (req: Request, res: Response) => {
-    res.send(`This is ${req.params.id} page from contact`)
-})
+// Create new contact
+router.post("/", createContact)
+
+// Update contact
+router.put("/:id", updateContact)
+
+// Delete contact
+router.delete("/:id", deleteContact)
 
 module.exports = router;
