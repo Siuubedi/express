@@ -29,7 +29,8 @@ export const getContactById = (req: Request, res: Response) => {
 // @route POST /api/contacts
 // @access Public
 export const createContact = (req: Request, res: Response) => {
-    res.status(200).json({ message: "Create new contact" })
+    console.log("Contact created:", req.body)
+    res.status(201).json({ message: "Contact created!" })
 }
 
 // @desc Update Contact
